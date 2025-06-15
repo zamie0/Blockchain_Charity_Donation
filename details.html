@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BarakahFund - Charity Platform</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="details.css" />
+
+  <!-- Font Awesome for user icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="assets/03ef7d53c58222b098e8eadd4c50ba29.png" alt="BarakahFund Logo" class="logo-img" />
+      <span>BarakahFund</span>
+    </a>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="header-right">
+      <nav class="navbar" id="navbar">
+        <a href="Homepage2.html" class="active">Home</a>
+        <a href="zakat.html">Zakat</a>
+        <a href="waqf.html">Waqf</a>
+        <a href="sadaqah.html">Sadaqah</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="user-icon">
+        <i class="fas fa-user"></i>
+        <div class="dropdown">
+          <a href="profile.html">Profile</a>
+          <a href="Homepage.html">Log Out</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <h1 class="heading">Every Act of <span>Giving</span> Counts</h1>
+
+  <section class="donation-form">
+
+    <!-- Sadaqah Information -->
+    <div class="box">
+      <h2>Sadaqah Information</h2>
+      <form class="info-form">
+        <div class="row">
+          <div class="field">
+            <label>Full Name</label>
+            <input type="text" value="Muhammad Faiz bin Md Fadzli" />
+          </div>
+          <div class="field">
+            <label>Amount</label>
+            <input type="number" value="100.00" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>Mobile number</label>
+            <div class="phone-input">
+              <select><option value="+60">+60</option></select>
+              <input type="text" placeholder="Phone number" />
+            </div>
+          </div>
+        </div>
+        <label><input type="checkbox" /> Receive text alerts about this payment.</label>
+      </form>
+    </div>
+
+    <!-- Payment Options -->
+    <div class="box payment-section">
+      <h2><i class="icon">💳</i> Payment options</h2>
+      <div class="tabs">
+        <button class="tab active">Debit/Credit Card</button>
+        <button class="tab">E-Wallet</button>
+        <button class="tab">Bank transfer</button>
+        <button class="tab">DuitNow QR</button>
+      </div>
+
+      <div class="card-icons">
+        <img src="https://img.icons8.com/color/48/mastercard-logo.png" />
+        <img src="https://img.icons8.com/color/48/visa.png" />
+        <img src="https://img.icons8.com/color/48/discover.png" />
+      </div>
+
+      <form class="info-form">
+        <div class="field">
+          <label>Name on card</label>
+          <input type="text" value="Aliss Soraya" />
+        </div>
+        <div class="field">
+          <label>Debit/Credit card number</label>
+          <input type="text" value="38219738264763" />
+        </div>
+        <div class="row">
+          <div class="field">
+            <label>Expiration Date</label>
+            <select>
+              <option>April</option>
+            </select>
+            <select>
+              <option>2026</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Security Code</label>
+            <input type="text" value="543" />
+          </div>
+          <div class="field">
+            <label>Billing Zip code</label>
+            <input type="text" value="214007" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Complete Transaction -->
+    <div class="box">
+      <h2><i class="icon">✅</i> Complete Transaction</h2>
+      <ol class="info-text">
+        <li>Please note that sadaqah contributions made through BarakahFund are non-refundable.</li>
+        <li>If you need to make changes to the type or amount of waqf, a new transaction will be required through the BarakahFund platform.</li>
+        <li>Our customer support team is available to assist you promptly with any inquiries or issues regarding your waqf payment.</li>
+        <li>Kindly be advised that no refunds will be provided once the sadaqah contribution has been processed.</li>
+      </ol>
+      <p>
+        By clicking the button below, I acknowledge that I have reviewed the
+        <a href="#">Privacy Statement</a> and the
+        <a href="#">Terms and Conditions</a>.
+      </p>
+      <button class="pay-now">Pay Now</button>
+      <p class="secure-note">🔒 We use secure transmission and encrypted storage to protect your personal information</p>
+    </div>
+
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,1741 @@
+.c_home-page-barakah-fund-frame10,
+.c_home-page-barakah-fund-frame11 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame10 {
+  overflow: hidden;
+  align-items: center;
+  background-color: #fff;
+}
+
+.c_home-page-barakah-fund-frame11 {
+  gap: 70px;
+  align-items: flex-start;
+}
+
+.c_home-page-barakah-fund-frame12 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  padding: 0 100px;
+  max-width: 1440px;
+  max-height: 68px;
+}
+
+.c_home-page-barakah-fund-frame13,
+.c_home-page-barakah-fund-frame14 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+
+.c_home-page-barakah-fund-frame13 {
+  gap: 206px;
+  padding: 0 100px;
+  overflow: hidden;
+  max-width: 1440px;
+  justify-content: space-between;
+}
+
+.c_home-page-barakah-fund-frame14 {
+  gap: 35px;
+  max-width: 531px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-text10 {
+  width: 100%;
+  max-width: 531px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text11 {
+  color: #000;
+  font-size: 60px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Space Grotesk",sans-serif;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-text12 {
+  width: 100%;
+  max-width: 498px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text13 {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Space Grotesk",sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-frame15,
+.c_home-page-barakah-fund-instance1 {
+  gap: 15px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 264px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.c_home-page-barakah-fund-instance1 {
+  gap: 8px;
+  padding: 12px 20px;
+  max-width: 149px;
+  border-radius: 32px 32px 32px 32px;
+  justify-content: center;
+  background-color: #151515;
+}
+
+.c_home-page-barakah-fund-text14 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text15 {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Abel",sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-instance2 {
+  gap: 8px;
+  width: 100%;
+  display: flex;
+  padding: 12px 20px;
+  position: relative;
+  max-width: 102px;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 34px 34px 34px 34px;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.c_home-page-barakah-fund-text16 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text17 {
+  color: #1a1d1f;
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Abel",sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-group10 {
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-frame16,
+.c_home-page-barakah-fund-frame17 {
+  width: 100%;
+  overflow: hidden;
+  max-width: 36px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame17 {
+  max-width: 70px;
+  transform: rotate(45deg);
+}
+
+.c_home-page-barakah-fund-ellipse1,
+.c_home-page-barakah-fund-ellipse2,
+.c_home-page-barakah-fund-ellipse3 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 499.197265625px;
+  transform: rotate(28.88deg);
+  max-height: 292.73828125px;
+  border-radius: 100%;
+}
+
+.c_home-page-barakah-fund-vector10 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 31px;
+}
+
+.c_home-page-barakah-fund-ellipse4,
+.c_home-page-barakah-fund-ellipse5 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 20px;
+  border-radius: 100%;
+}
+
+.c_home-page-barakah-fund-ellipse5 {
+  max-width: 47px;
+}
+
+.c_home-page-barakah-fund-group11 {
+  width: 100%;
+  max-width: 446px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-group12 {
+  width: 100%;
+  max-width: 341px;
+  box-sizing: border-box;
+}
+
+.c_home-page-barakah-fund-group13,
+.c_home-page-barakah-fund-group14 {
+  width: 100%;
+  max-width: 341px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-group14 {
+  max-width: 64px;
+}
+
+.c_home-page-barakah-fund-vector11 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 62.703125px;
+}
+
+.c_home-page-barakah-fund-vector12,
+.c_home-page-barakah-fund-vector13 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 64.421875px;
+}
+
+.c_home-page-barakah-fund-vector13 {
+  max-width: 274.0703125px;
+}
+
+.c_home-page-barakah-fund-group15 {
+  width: 100%;
+  max-width: 214px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-vector14 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 152.349609375px;
+  transform: rotate(-27.45deg);
+}
+
+.c_home-page-barakah-fund-vector15,
+.c_home-page-barakah-fund-vector16 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 154.125px;
+}
+
+.c_home-page-barakah-fund-group16 {
+  width: 100%;
+  max-width: 50px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-vector17 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 35.271484375px;
+  transform: rotate(-27.45deg);
+}
+
+.c_home-page-barakah-fund-vector18 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 36.9765625px;
+}
+
+.c_home-page-barakah-fund-vector19,
+.c_home-page-barakah-fund-vector20 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 135.111328125px;
+}
+
+.c_home-page-barakah-fund-vector20 {
+  max-width: 275.861328125px;
+}
+
+.c_home-page-barakah-fund-group17 {
+  width: 100%;
+  max-width: 164px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-vector21 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 162.546875px;
+}
+
+.c_home-page-barakah-fund-vector22,
+.c_home-page-barakah-fund-vector23 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 164.322265625px;
+}
+
+.c_home-page-barakah-fund-vector23 {
+  max-width: 40.4296875px;
+}
+
+.c_home-page-barakah-fund-group18 {
+  width: 100%;
+  max-width: 42px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-vector24,
+.c_home-page-barakah-fund-vector25 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 40.080078125px;
+}
+
+.c_home-page-barakah-fund-vector25 {
+  max-width: 41.712890625px;
+}
+
+.c_home-page-barakah-fund-group19 {
+  width: 100%;
+  max-width: 72px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-vector26,
+.c_home-page-barakah-fund-vector27 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 70.173828125px;
+}
+
+.c_home-page-barakah-fund-vector27 {
+  max-width: 71.943359375px;
+}
+
+.c_home-page-barakah-fund-group20 {
+  width: 100%;
+  max-width: 57px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-vector28,
+.c_home-page-barakah-fund-vector29 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 55.12109375px;
+}
+
+.c_home-page-barakah-fund-vector29 {
+  max-width: 56.857421875px;
+}
+
+.c_home-page-barakah-fund-group21,
+.c_home-page-barakah-fund-group22 {
+  width: 100%;
+  max-width: 192px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-group22 {
+  max-width: 99px;
+}
+
+.c_home-page-barakah-fund-vector30 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 73.162109375px;
+  transform: rotate(-27.71deg);
+}
+
+.c_home-page-barakah-fund-group23 {
+  width: 100%;
+  max-width: 38px;
+  box-sizing: border-box;
+}
+
+.c_home-page-barakah-fund-vector31 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 37.814453125px;
+}
+
+.c_home-page-barakah-fund-group24,
+.c_home-page-barakah-fund-group25 {
+  width: 100%;
+  max-width: 95px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-vector32 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 67.111328125px;
+  transform: rotate(-45.01deg);
+}
+
+.c_home-page-barakah-fund-vector33,
+.c_home-page-barakah-fund-vector34 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 68.833984375px;
+}
+
+.c_home-page-barakah-fund-vector34 {
+  max-width: 33.517578125px;
+}
+
+.c_home-page-barakah-fund-group26 {
+  width: 100%;
+  max-width: 94px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-vector35 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 67.6171875px;
+  transform: rotate(-34.78deg);
+}
+
+.c_home-page-barakah-fund-vector36 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 32.908203125px;
+}
+
+.c_home-page-barakah-fund-group27,
+.c_home-page-barakah-fund-group28 {
+  width: 100%;
+  max-width: 102px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-vector37 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 76.357421875px;
+  transform: rotate(-25.97deg);
+}
+
+.c_home-page-barakah-fund-vector38 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 78.0625px;
+}
+
+.c_home-page-barakah-fund-group29 {
+  width: 100%;
+  max-width: 39px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-vector39,
+.c_home-page-barakah-fund-vector40 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 39.1796875px;
+}
+
+.c_home-page-barakah-fund-vector40 {
+  max-width: 17.931640625px;
+  transform: rotate(-45.01deg);
+}
+
+.c_home-page-barakah-fund-frame18 {
+  gap: 48px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c_home-page-barakah-fund-frame18,
+.c_home-page-barakah-fund-frame19,
+.c_home-page-barakah-fund-frame20 {
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+.c_home-page-barakah-fund-frame20 {
+  gap: 96px;
+  display: flex;
+  padding: 0 144px;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.c_home-page-barakah-fund-rectangle1 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 473px;
+}
+
+.c_home-page-barakah-fund-frame21,
+.c_home-page-barakah-fund-frame22 {
+  gap: 32px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 661px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame22 {
+  gap: 16px;
+  max-width: 601px;
+}
+
+.c_home-page-barakah-fund-text18 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text19 {
+  color: #4d4d4d;
+  font-size: 36px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-text20 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text21 {
+  color: #717171;
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-instance3 {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  padding: 14px 32px;
+  position: relative;
+  max-width: 151px;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 4px 4px 4px 4px;
+  justify-content: center;
+  background-color: #4caf4f;
+}
+
+.c_home-page-barakah-fund-text22 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text23 {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: center;
+  font-family: "Inter",sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-frame23 {
+  gap: 30px;
+  width: 100%;
+  display: flex;
+  padding: 64px 144px;
+  position: relative;
+  max-width: 1440px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f7fa;
+}
+
+.c_home-page-barakah-fund-frame24 {
+  gap: 8px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  max-width: 540px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame25 {
+  width: 100%;
+  overflow: hidden;
+  max-width: 408px;
+  box-sizing: border-box;
+}
+
+.c_home-page-barakah-fund-text24 {
+  width: 100%;
+  max-width: 408px;
+  min-height: auto;
+}
+
+.c_home-page-barakah-fund-text24,
+.c_home-page-barakah-fund-text25 {
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text26,
+.c_home-page-barakah-fund-text27 {
+  color: #4d4d4d;
+  font-size: 36px;
+  font-style: normal;
+  font-family: "Inter",sans-serif;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-text27 {
+  color: #4caf4f;
+}
+
+.c_home-page-barakah-fund-text28 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text29 {
+  color: #18191f;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-frame26 {
+  gap: 40px;
+  overflow: hidden;
+  max-width: 540px;
+  flex-direction: column;
+}
+
+.c_home-page-barakah-fund-frame26,
+.c_home-page-barakah-fund-frame27,
+.c_home-page-barakah-fund-frame28 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame27 {
+  gap: 30px;
+  overflow: hidden;
+  max-width: 540px;
+}
+
+.c_home-page-barakah-fund-frame28 {
+  gap: 16px;
+  max-width: 255px;
+}
+
+.c_home-page-barakah-fund-frame29,
+.c_home-page-barakah-fund-frame30 {
+  width: 100%;
+  overflow: hidden;
+  max-width: 48px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame30 {
+  display: flex;
+  position: relative;
+  max-width: 191px;
+}
+
+.c_home-page-barakah-fund-text30 {
+  width: 100%;
+  max-width: 191px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text31 {
+  color: #4d4d4d;
+  font-size: 28px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-text32 {
+  width: 100%;
+  max-width: 191px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text33 {
+  color: #717171;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-frame31 {
+  gap: 16px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 255px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame32,
+.c_home-page-barakah-fund-frame33 {
+  width: 100%;
+  max-width: 48px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame33 {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  max-width: 191px;
+}
+
+.c_home-page-barakah-fund-text34 {
+  width: 100%;
+  max-width: 191px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text35 {
+  color: #4d4d4d;
+  font-size: 28px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-text36 {
+  width: 100%;
+  max-width: 191px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text37 {
+  color: #717171;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-frame34,
+.c_home-page-barakah-fund-frame35 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame34 {
+  gap: 30px;
+  overflow: hidden;
+  max-width: 540px;
+}
+
+.c_home-page-barakah-fund-frame35 {
+  gap: 16px;
+  max-width: 255px;
+}
+
+.c_home-page-barakah-fund-frame36,
+.c_home-page-barakah-fund-frame37 {
+  width: 100%;
+  overflow: hidden;
+  max-width: 48px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame37 {
+  display: flex;
+  position: relative;
+  max-width: 191px;
+}
+
+.c_home-page-barakah-fund-text38 {
+  width: 100%;
+  max-width: 191px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text39 {
+  color: #4d4d4d;
+  font-size: 28px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-text40 {
+  width: 100%;
+  max-width: 191px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text41 {
+  color: #717171;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-frame38 {
+  gap: 16px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 255px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame39,
+.c_home-page-barakah-fund-frame40 {
+  width: 100%;
+  overflow: hidden;
+  max-width: 48px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame40 {
+  display: flex;
+  position: relative;
+  max-width: 191px;
+}
+
+.c_home-page-barakah-fund-text42 {
+  width: 100%;
+  max-width: 191px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text43 {
+  color: #4d4d4d;
+  font-size: 28px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-text44 {
+  width: 100%;
+  max-width: 191px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text45 {
+  color: #717171;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-frame41,
+.c_home-page-barakah-fund-frame42 {
+  gap: 58px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame42 {
+  gap: 8px;
+  max-width: 1110px;
+}
+
+.c_home-page-barakah-fund-text46 {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  min-height: auto;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text47,
+.c_home-page-barakah-fund-text48 {
+  color: #4d4d4d;
+  font-size: 36px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: center;
+  font-family: "Inter",sans-serif;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-text49 {
+  width: 100%;
+  max-width: 628px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text50 {
+  color: #717171;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: center;
+  font-family: "Inter",sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-frame43,
+.c_home-page-barakah-fund-frame44 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.c_home-page-barakah-fund-frame43 {
+  gap: 17px;
+  padding: 0 144px;
+  max-width: 1440px;
+  justify-content: space-between;
+}
+
+.c_home-page-barakah-fund-frame44 {
+  max-width: 368px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-rectangle2 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 368px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.c_home-page-barakah-fund-frame45 {
+  gap: 16px;
+  width: 100%;
+  display: flex;
+  padding: 16px;
+  position: relative;
+  max-width: 317px;
+  box-shadow: 0 8px 16px 0 rgba(171,190,209,.4);
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 8px 8px 8px 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f5f7fa;
+}
+
+.c_home-page-barakah-fund-text51 {
+  width: 100%;
+  max-width: 285px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text52 {
+  color: #717171;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Inter",sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-text52,
+.c_home-page-barakah-fund-text53 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-frame46 {
+  gap: 8px;
+  width: 100%;
+  display: flex;
+  padding: 8px;
+  position: relative;
+  max-width: 285px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.c_home-page-barakah-fund-text54 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text55 {
+  color: #4caf4f;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-frame47,
+.c_home-page-barakah-fund-instance4 {
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-instance4 {
+  max-width: 24px;
+  transform: rotate(180deg);
+  align-items: flex-start;
+}
+
+.c_home-page-barakah-fund-frame47 {
+  display: flex;
+  position: relative;
+  max-width: 368px;
+  align-items: center;
+}
+
+.c_home-page-barakah-fund-rectangle3 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 368px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.c_home-page-barakah-fund-frame48 {
+  gap: 16px;
+  width: 100%;
+  display: flex;
+  padding: 16px;
+  position: relative;
+  max-width: 317px;
+  box-shadow: 0 8px 16px 0 rgba(171,190,209,.4);
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 8px 8px 8px 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f5f7fa;
+}
+
+.c_home-page-barakah-fund-text56 {
+  width: 100%;
+  max-width: 285px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text57 {
+  color: #717171;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Inter",sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-text57,
+.c_home-page-barakah-fund-text58 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-frame49 {
+  gap: 8px;
+  width: 100%;
+  display: flex;
+  padding: 8px;
+  position: relative;
+  max-width: 285px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.c_home-page-barakah-fund-text59 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text60 {
+  color: #4caf4f;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-frame50,
+.c_home-page-barakah-fund-instance5 {
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-instance5 {
+  max-width: 24px;
+  transform: rotate(180deg);
+  align-items: flex-start;
+}
+
+.c_home-page-barakah-fund-frame50 {
+  display: flex;
+  position: relative;
+  max-width: 368px;
+  align-items: center;
+}
+
+.c_home-page-barakah-fund-rectangle4 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 368px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.c_home-page-barakah-fund-frame51 {
+  gap: 16px;
+  width: 100%;
+  display: flex;
+  padding: 16px;
+  position: relative;
+  max-width: 317px;
+  box-shadow: 0 8px 16px 0 rgba(171,190,209,.4);
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 8px 8px 8px 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f5f7fa;
+}
+
+.c_home-page-barakah-fund-text61 {
+  width: 100%;
+  max-width: 285px;
+  margin-top: 0;
+  min-height: auto;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text62 {
+  color: #717171;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Inter",sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-text62,
+.c_home-page-barakah-fund-text63 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-frame52 {
+  gap: 8px;
+  width: 100%;
+  display: flex;
+  padding: 8px;
+  position: relative;
+  max-width: 285px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.c_home-page-barakah-fund-text64 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text65 {
+  color: #4caf4f;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Inter",sans-serif;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-frame53,
+.c_home-page-barakah-fund-instance6 {
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-instance6 {
+  max-width: 24px;
+  transform: rotate(180deg);
+  align-items: flex-start;
+}
+
+.c_home-page-barakah-fund-frame53 {
+  display: flex;
+  padding: 20px 72px 18px;
+  position: relative;
+  max-width: 1440px;
+  align-items: center;
+  background-color: #000;
+}
+
+.c_home-page-barakah-fund-frame54 {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-width: 1296px;
+  max-height: 75px;
+}
+
+.c_home-page-barakah-fund-frame55,
+.c_home-page-barakah-fund-frame56 {
+  gap: 389px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 1296px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame56 {
+  gap: 12px;
+  max-width: 96px;
+}
+
+.c_home-page-barakah-fund-frame57 {
+  align-items: flex-start;
+  border-radius: 100px 100px 100px 100px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+}
+
+.c_home-page-barakah-fund-frame57,
+.c_home-page-barakah-fund-frame58,
+.c_home-page-barakah-fund-frame59 {
+  width: 100%;
+  max-width: 24px;
+  box-sizing: border-box;
+}
+
+.c_home-page-barakah-fund-frame59 {
+  align-items: flex-start;
+  border-radius: 100px 100px 100px 100px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+}
+
+.c_home-page-barakah-fund-text66 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text67 {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Teachers",sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-frame60,
+.c_home-page-barakah-fund-frame61 {
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.c_home-page-barakah-fund-frame60 {
+  gap: 117px;
+  padding: 20px 177px 20px 72px;
+  position: absolute;
+  max-width: 1440px;
+  flex-direction: column;
+  background-color: #000;
+}
+
+.c_home-page-barakah-fund-frame61 {
+  gap: 8px;
+  display: flex;
+  position: relative;
+  max-width: 157px;
+}
+
+.c_home-page-barakah-fund-rectangle5 {
+  top: 0;
+  left: 0;
+  color: red;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  max-width: 36px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.c_home-page-barakah-fund-text68 {
+  width: 100%;
+  max-width: 107px;
+  margin-top: 0;
+  min-height: 22px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text69 {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Jua",sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-frame62,
+.c_home-page-barakah-fund-instance7 {
+  gap: 15px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 345px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.c_home-page-barakah-fund-instance7 {
+  gap: 8px;
+  padding: 12px 20px;
+  max-width: 66px;
+  border-radius: 34px 34px 34px 34px;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.c_home-page-barakah-fund-text70 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text71 {
+  color: #1a1d1f;
+  font-size: 13px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: center;
+  font-family: "Abel",sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+
+.c_home-page-barakah-fund-instance8 {
+  gap: 8px;
+  width: 100%;
+  display: flex;
+  padding: 12px 20px;
+  position: relative;
+  max-width: 149px;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius: 32px 32px 32px 32px;
+  justify-content: center;
+  background-color: #151515;
+}
+
+.c_home-page-barakah-fund-text72 {
+  width: 100%;
+  max-width: auto;
+  margin-top: 0;
+  min-height: auto;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c_home-page-barakah-fund-text73 {
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  margin-top: 0;
+  text-align: center;
+  font-family: "Abel",sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  text-transform: none;
+}

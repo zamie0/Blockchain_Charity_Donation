@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BarakahFund - User Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="profile.css" />
+</head>
+
+<body>
+    <header class="header">
+    <a href="#" class="logo">
+      <img src="assets/03ef7d53c58222b098e8eadd4c50ba29.png" alt="BarakahFund Logo" class="logo-img" />
+      <span>BarakahFund</span>
+    </a>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="header-right">
+      <nav class="navbar" id="navbar">
+        <a href="Homepage2.html">Home</a>
+        <a href="zakat.html">Zakat</a>
+        <a href="waqf.html">Waqf</a>
+        <a href="sadaqah.html">Sadaqah</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="user-icon">
+        <i class="fas fa-user"></i>
+        <div class="dropdown">
+          <a href="profile.html">Profile</a>
+          <a href="Homepage.html">Log Out</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="profile-wrapper">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="profile-pic">
+        <img src="assets/profile.jpg" alt="Profile Photo" />
+        <div class="edit-icon"><i class="fas fa-pen"></i></div>
+      </div>
+      <h2>Hazami <span class="verified"><i class="fas fa-check-circle"></i></span></h2>
+      <p><i class="fas fa-map-marker-alt"></i> Johor</p>
+      <p><i class="fas fa-calendar-alt"></i> 19th May</p>
+      <nav>
+        <a href="#" class="active">Profile Information</a>
+        <a href="#">Account</a>
+      </nav>
+    </div>
+
+    <!-- Profile Form -->
+    <div class="profile-content">
+      <h2>Personal Information</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" value="Hazami" />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" value="+60197366813" />
+
+        <label for="ic">MyKad Identification Number:</label>
+        <input type="text" id="ic" value="031231-03-5029" />
+
+        <h3>Security</h3>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" value="zamicomel15@gmail.com" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" value="********" />
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" value="********" />
+
+        <button type="submit" class="save-btn">Save</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

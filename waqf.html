@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BarakahFund - Charity Platform</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="waqf.css" />
+
+  <!-- Font Awesome for user icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="assets/03ef7d53c58222b098e8eadd4c50ba29.png" alt="BarakahFund Logo" class="logo-img" />
+      <span>BarakahFund</span>
+    </a>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="header-right">
+      <nav class="navbar" id="navbar">
+        <a href="Homepage2.html" class="active">Home</a>
+        <a href="zakat.html">Zakat</a>
+        <a href="waqf.html">Waqf</a>
+        <a href="sadaqah.html">Sadaqah</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="user-icon">
+        <i class="fas fa-user"></i>
+        <div class="dropdown">
+          <a href="profile.html">Profile</a>
+          <a href="Homepage.html">Log Out</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="waqf-section">
+    <h1>Support & Build the Future with Waqf</h1>
+    <div class="projects">
+
+      <div class="project-card">
+        <h2>Mosque Speaker</h2>
+        <p><strong>Bank:</strong> Bank Islam Malaysia</p>
+        <p><strong>Location:</strong> Putrajaya, Malaysia</p>
+        <p><strong>Goal:</strong> RM10,500.00</p>
+        <p><strong>Raised:</strong> RM4,020.00 (38%)</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 38%;"></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2>Bukit Lanjan</h2>
+        <p><strong>Bank:</strong> Bank Muamalat Malaysia</p>
+        <p><strong>Location:</strong> Selangor, Malaysia</p>
+        <p><strong>Goal:</strong> RM7,000.00</p>
+        <p><strong>Raised:</strong> RM2,100.00 (30%)</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 30%;"></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2>Dialysis for Hospital Serdang</h2>
+        <p><strong>Bank:</strong> Bank Islam Malaysia</p>
+        <p><strong>Location:</strong> Kuala Lumpur, Malaysia</p>
+        <p><strong>Goal:</strong> RM80,000.00</p>
+        <p><strong>Raised:</strong> RM3,820.00 (5%)</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 5%;"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

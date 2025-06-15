@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BarakahFund - Charity Platform</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="faq.css" />
+
+  <!-- Font Awesome for user icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="assets/03ef7d53c58222b098e8eadd4c50ba29.png" alt="BarakahFund Logo" class="logo-img" />
+      <span>BarakahFund</span>
+    </a>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="header-right">
+      <nav class="navbar" id="navbar">
+        <a href="Homepage2.html" class="active">Home</a>
+        <a href="zakat.html">Zakat</a>
+        <a href="waqf.html">Waqf</a>
+        <a href="sadaqah.html">Sadaqah</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="user-icon">
+        <i class="fas fa-user"></i>
+        <div class="dropdown">
+          <a href="profile.html">Profile</a>
+          <a href="Homepage.html">Log Out</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="faq-section">
+  <div class="faq-container">
+    <!-- Left Text Section -->
+    <div class="faq-intro">
+      <h2>Frequently<br><span>Asked Questions</span></h2>
+      <p>Get answers to your questions about giving, funding, and making a real impact.</p>
+    </div>
+
+    <!-- Right FAQ Content -->
+    <div class="faq-content">
+      <input type="text" placeholder="🔍 Search here" class="faq-search" />
+
+      <div class="faq-item active">
+        <div class="faq-question">
+          <strong>What can I give to?</strong>
+          <button class="faq-toggle">✕</button>
+        </div>
+        <div class="faq-answer">
+          <p>
+            You can contribute to verified Zakat recipients, Sadaqah causes (like food aid, education, and health),
+            or Waqf projects such as mosques, schools, and long-term community development, all following Shariah guidelines.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Is there a minimum or maximum amount I can give?
+          <button class="faq-toggle">+</button>
+        </div>
+        <div class="faq-answer">
+          <p>There is no fixed limit. Any amount you give with intention counts and helps those in need.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Can I donate to more than one cause?
+          <button class="faq-toggle">+</button>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, you can contribute to multiple causes as per your preference and capacity.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          When will the funds reach the selected cause?
+          <button class="faq-toggle">+</button>
+        </div>
+        <div class="faq-answer">
+          <p>Funds are processed promptly and reach the intended cause within a few working days.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Will my donation be fully received by the cause I selected?
+          <button class="faq-toggle">+</button>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, we ensure transparency and full disbursement to the selected cause following our guidelines.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <script>
+    function toggleMenu() {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

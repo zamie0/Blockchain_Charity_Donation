@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BarakahFund - Charity Platform</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="contact.css" />
+
+  <!-- Font Awesome for user icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="assets/03ef7d53c58222b098e8eadd4c50ba29.png" alt="BarakahFund Logo" class="logo-img" />
+      <span>BarakahFund</span>
+    </a>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="header-right">
+      <nav class="navbar" id="navbar">
+        <a href="Homepage2.html" class="active">Home</a>
+        <a href="zakat.html">Zakat</a>
+        <a href="waqf.html">Waqf</a>
+        <a href="sadaqah.html">Sadaqah</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="user-icon">
+        <i class="fas fa-user"></i>
+        <div class="dropdown">
+          <a href="profile.html">Profile</a>
+          <a href="Homepage.html">Log Out</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="contact-section">
+
+  <div class="contact-container">
+    <!-- Left Info Panel -->
+    <div class="contact-info">
+      <h3>Give with Intention, Share with Purpose.</h3>
+      <p>Every ringgit of Zakat or Sadaqah makes a difference. Let's build a legacy of goodness through Waqf.</p>
+      <address>
+        Lot 29, Jalan Mawar 3,<br />
+        Taman Harmoni,<br />
+        50450 Kuala Lumpur,<br />
+        Malaysia
+      </address>
+      <p><i class="fas fa-phone"></i> +60 3-2772 5400</p>
+      <p><i class="fas fa-envelope"></i> barakahfund@gmail.com</p>
+      <p><i class="fas fa-clock"></i> Mon–Fri: 8:00am – 6:00pm</p>
+    </div>
+
+    <!-- Right Contact Form -->
+    <div class="contact-form">
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+        </div>
+        <div class="form-row">
+          <input type="email" placeholder="Email Address" required />
+          <input type="tel" placeholder="Phone Number" />
+        </div>
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Message" rows="5"></textarea>
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <script>
+    function toggleMenu() {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BarakahFund - Charity Platform</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="sadaqah.css" />
+
+  <!-- Font Awesome for user icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="assets/03ef7d53c58222b098e8eadd4c50ba29.png" alt="BarakahFund Logo" class="logo-img" />
+      <span>BarakahFund</span>
+    </a>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="header-right">
+      <nav class="navbar" id="navbar">
+        <a href="Homepage2.html" class="active">Home</a>
+        <a href="zakat.html">Zakat</a>
+        <a href="waqf.html">Waqf</a>
+        <a href="sadaqah.html">Sadaqah</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="user-icon">
+        <i class="fas fa-user"></i>
+        <div class="dropdown">
+          <a href="profile.html">Profile</a>
+          <a href="Homepage.html">Log Out</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="card-grid">
+    
+    <!-- Johor -->
+    <div class="card">
+      <img src="johor-flag.png" alt="Johor Flag" class="flag" />
+      <div class="card-body">
+        <h2>Johor</h2>
+        <div class="progress-bar"><div class="fill" style="width: 80%"></div></div>
+        <p>Raised: RM12000</p>
+        <p>2000+ sadaqah</p>
+        <a href="details.html" class="button-link">View Details</a>
+      </div>
+    </div>
+
+    <!-- Kedah -->
+    <div class="card">
+      <img src="kedah-flag.png" alt="Kedah Flag" class="flag" />
+      <div class="card-body">
+        <h2>Kedah</h2>
+        <div class="progress-bar"><div class="fill" style="width: 90%"></div></div>
+        <p>Goal: RM15000</p>
+        <p>1500+ sadaqah</p>
+        <a href="details.html" class="button-link">View Details</a>
+      </div>
+    </div>
+
+    <!-- Kelantan -->
+    <div class="card">
+      <img src="kelantan-flag.png" alt="Kelantan Flag" class="flag" />
+      <div class="card-body">
+        <h2>Kelantan</h2>
+        <div class="progress-bar"><div class="fill" style="width: 10%"></div></div>
+        <p>Raised: RM200000</p>
+        <p>4000+ sadaqah</p>
+        <a href="details.html" class="button-link">View Details</a>
+      </div>
+    </div>
+
+    <!-- Melaka -->
+    <div class="card">
+      <img src="melaka-flag.png" alt="Melaka Flag" class="flag" />
+      <div class="card-body">
+        <h2>Melaka</h2>
+        <div class="progress-bar"><div class="fill" style="width: 10%"></div></div>
+        <p>Raised: RM60000</p>
+        <p>2000+ sadaqah</p>
+        <a href="details.html" class="button-link">View Details</a>
+      </div>
+    </div>
+
+    <!-- Negeri Sembilan -->
+    <div class="card">
+      <img src="negeri-sembilan-flag.png" alt="Negeri Sembilan Flag" class="flag" />
+      <div class="card-body">
+        <h2>Negeri Sembilan</h2>
+        <div class="progress-bar"><div class="fill" style="width: 100%"></div></div>
+        <p>Raised: RM220000</p>
+        <p>4500+ sadaqah</p>
+        <a href="details.html" class="button-link">View Details</a>
+      </div>
+    </div>
+
+    <!-- Pahang -->
+    <div class="card">
+      <img src="pahang-flag.png" alt="Pahang Flag" class="flag" />
+      <div class="card-body">
+        <h2>Pahang</h2>
+        <div class="progress-bar"><div class="fill" style="width: 100%"></div></div>
+        <p>Goal: RM120000</p>
+        <p>5000+ sadaqah</p>
+        <a href="details.html" class="button-link">View Details</a>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

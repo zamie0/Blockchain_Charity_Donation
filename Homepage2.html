@@ -1,80 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarakahFund - Charity Platform</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BarakahFund - Charity Platform</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="Homepage2.css" />
 
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="Homepage2.css" />
+    <!-- Font Awesome for user icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-  <!-- Font Awesome for user icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="assets/03ef7d53c58222b098e8eadd4c50ba29.png"
+          alt="BarakahFund Logo"
+          class="logo-img"
+        />
+        <span>BarakahFund</span>
+      </a>
 
-<body>
-  <header class="header">
-    <a href="#" class="logo">
-      <img src="assets/03ef7d53c58222b098e8eadd4c50ba29.png" alt="BarakahFund Logo" class="logo-img" />
-      <span>BarakahFund</span>
-    </a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+      <div class="header-right">
+        <nav class="navbar" id="navbar">
+          <a href="Homepage2.html" class="active">Home</a>
+          <a href="zakat.html">Zakat</a>
+          <a href="waqf.html">Waqf</a>
+          <a href="sadaqah.html">Sadaqah</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
 
-    <div class="header-right">
-      <nav class="navbar" id="navbar">
-        <a href="Homepage2.html" class="active">Home</a>
-        <a href="zakat.html">Zakat</a>
-        <a href="waqf.html">Waqf</a>
-        <a href="sadaqah.html">Sadaqah</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact Us</a>
-      </nav>
-
-      <div class="user-icon">
-        <i class="fas fa-user"></i>
-        <div class="dropdown">
-          <a href="profile.html">Profile</a>
-          <a href="Homepage.html">Log Out</a>
+        <div class="user-icon">
+          <i class="fas fa-user"></i>
+          <div class="dropdown">
+            <a href="profile.html">Profile</a>
+            <a href="Homepage.html">Log Out</a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section class="hero">
-    <h1>Support your community the Islamic way</h1>
-    <p>Zakat, Sadaqah, and Waqf services made simple, secure, and impactful.</p>
-  </section>
+    <section class="hero">
+      <h1>Support your community the Islamic way</h1>
+      <p>
+        Zakat, Sadaqah, and Waqf services made simple, secure, and impactful.
+      </p>
+      <div
+        id="donation-total"
+        style="
+          margin-top: 20px;
+          font-size: 20px;
+          font-weight: bold;
+          color: #00796b;
+        "
+      >
+        Loading total donations...
+      </div>
+      <div
+        id="latest-transactions"
+        style="margin-top: 16px; font-size: 16px; color: #333"
+      >
+        Loading recent transactions...
+      </div>
+    </section>
 
-  <section class="donation-options">
-  <div class="option-card">
-    <h2>ZAKAT</h2>
-    <button>VIEW DETAILS</button>
-  </div>
-  <div class="option-card">
-    <h2>WAQF</h2>
-    <button>VIEW DETAILS</button>
-  </div>
-  <div class="option-card">
-    <h2>SADAQAH</h2>
-    <button>VIEW DETAILS</button>
-  </div>
-</section>
+    <section class="donation-options">
+      <div class="option-card">
+        <h2>ZAKAT</h2>
+        <button>VIEW DETAILS</button>
+      </div>
+      <div class="option-card">
+        <h2>WAQF</h2>
+        <button>VIEW DETAILS</button>
+      </div>
+      <div class="option-card">
+        <h2>SADAQAH</h2>
+        <button>VIEW DETAILS</button>
+      </div>
+    </section>
 
+    <script>
+      function toggleMenu() {
+        const navbar = document.getElementById("navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.2/dist/ethers.umd.min.js"></script>
+    <script>
+      async function fetchDonationsFromEtherscan() {
+        const walletAddress = "0x773B4B335A1d5498d3704Ee7F7cca25D2136B2D8";
+        const apiKey = "";
 
-  <script>
-    function toggleMenu() {
-      const navbar = document.getElementById('navbar');
-      navbar.classList.toggle('active');
-    }
-  </script>
-</body>
+        const apiUrl = `https://api-sepolia.etherscan.io/api?module=account&action=txlist&address=${walletAddress}&startblock=0&endblock=99999999&sort=desc&apikey=${apiKey}`;
 
+        try {
+          const res = await fetch(apiUrl);
+          const data = await res.json();
+
+          if (data.status !== "1" || !data.result) {
+            throw new Error("Failed to fetch transaction history.");
+          }
+
+          const transactions = data.result;
+
+          // Sum all incoming transactions (i.e., to the wallet)
+          const incomingTxs = transactions.filter(
+            (tx) => tx.to && tx.to.toLowerCase() === walletAddress.toLowerCase()
+          );
+
+          const totalEth = incomingTxs.reduce(
+            (sum, tx) => sum + parseFloat(tx.value) / 1e18,
+            0
+          );
+
+          // Convert to RM using CoinGecko
+          const ethRateRes = await fetch(
+            "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=myr"
+          );
+          const rateData = await ethRateRes.json();
+          const ethToMYR = rateData.ethereum.myr;
+          const totalMYR = (totalEth * ethToMYR).toFixed(2);
+
+          // Update total
+          document.getElementById(
+            "donation-total"
+          ).textContent = `Total Donations: RM ${totalMYR}`;
+
+          // Display latest 3 incoming transactions
+          const latest3 = incomingTxs.slice(0, 3);
+          const txHtml = latest3
+            .map((tx) => {
+              const valueEth = parseFloat(tx.value) / 1e18;
+              const valueEthRounded = valueEth.toFixed(4);
+              const valueMYR = (valueEth * ethToMYR).toFixed(2);
+              const txHashShort = tx.hash.slice(0, 10) + "...";
+              const etherscanLink = `https://sepolia.etherscan.io/tx/${tx.hash}`;
+
+              return `<div>
+  ➤ <a href="${etherscanLink}" target="_blank" style="color:#00796b;text-decoration:none">
+    ${txHashShort}</a> — ${valueEthRounded} ETH (RM ${valueMYR})
+</div>`;
+            })
+            .join("");
+
+          document.getElementById("latest-transactions").innerHTML =
+            `<h4 style="margin-top: 12px;">Recent Transactions:</h4>` + txHtml;
+        } catch (error) {
+          console.error(error);
+          document.getElementById("donation-total").textContent =
+            "Failed to load donation total.";
+          document.getElementById("latest-transactions").textContent =
+            "No transaction data available.";
+        }
+      }
+
+      fetchDonationsFromEtherscan();
+    </script>
+  </body>
 </html>

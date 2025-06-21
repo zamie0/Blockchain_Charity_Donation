@@ -1,87 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarakahFund - Charity Platform</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BarakahFund - Charity Platform</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="zakat.css" />
 
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="zakat.css" />
+    <!-- Font Awesome for user icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  </head>
 
-  <!-- Font Awesome for user icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="assets/03ef7d53c58222b098e8eadd4c50ba29.png"
+          alt="BarakahFund Logo"
+          class="logo-img"
+        />
+        <span>BarakahFund</span>
+      </a>
 
-<body>
-  <header class="header">
-    <a href="#" class="logo">
-      <img src="assets/03ef7d53c58222b098e8eadd4c50ba29.png" alt="BarakahFund Logo" class="logo-img" />
-      <span>BarakahFund</span>
-    </a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+      <div class="header-right">
+        <nav class="navbar" id="navbar">
+          <a href="Homepage2.html" class="active">Home</a>
+          <a href="zakat.html">Zakat</a>
+          <a href="waqf.html">Waqf</a>
+          <a href="sadaqah.html">Sadaqah</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
 
-    <div class="header-right">
-      <nav class="navbar" id="navbar">
-        <a href="Homepage2.html" class="active">Home</a>
-        <a href="zakat.html">Zakat</a>
-        <a href="waqf.html">Waqf</a>
-        <a href="sadaqah.html">Sadaqah</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact Us</a>
-      </nav>
-
-      <div class="user-icon">
-        <i class="fas fa-user"></i>
-        <div class="dropdown">
-          <a href="profile.html">Profile</a>
-          <a href="Homepage.html">Log Out</a>
+        <div class="user-icon">
+          <i class="fas fa-user"></i>
+          <div class="dropdown">
+            <a href="profile.html">Profile</a>
+            <a href="Homepage.html">Log Out</a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section class="zakat-section">
-    <div class="zakat-header">
-      <h1>ZAKAT</h1>
-      <button class="more-btn">MORE</button>
-    </div>
-
-    <div class="zakat-cards">
-
-      <div class="zakat-card">
-        <img src="calculate.jpg" alt="Zakat Calculation" />
-        <p>Easily calculate your annual Zakat on income, savings, gold, and more. 100% Shariah-compliant.</p>
-        <button>CALCULATE</button>
+    <section class="zakat-section">
+      <div class="zakat-header">
+        <h1>ZAKAT</h1>
+        <button class="more-btn">MORE</button>
       </div>
 
-      <div class="zakat-card">
-        <img src="pay.jpg" alt="Pay Zakat" />
-        <p>Pay your Zakat directly to trusted channels online. Fast, secure, and accountable.</p>
-        <button>PAY</button>
+      <div class="zakat-cards">
+        <div class="zakat-card">
+          <img src="calculate.jpg" alt="Zakat Calculation" />
+          <p>
+            Easily calculate your annual Zakat on income, savings, gold, and
+            more. 100% Shariah-compliant.
+          </p>
+          <button>CALCULATE</button>
+        </div>
+
+        <div class="zakat-card">
+          <img src="pay.jpg" alt="Pay Zakat" />
+          <p>
+            Pay your Zakat directly to trusted channels online. Fast, secure,
+            and accountable.
+          </p>
+          <button>PAY</button>
+        </div>
+
+        <div class="zakat-card">
+          <img src="verify.jpg" alt="Verify Zakat" />
+          <p>
+            Already submitted a Zakat request? Track your application status and
+            updates here.
+          </p>
+          <button>VERIFY</button>
+        </div>
       </div>
+    </section>
 
-      <div class="zakat-card">
-        <img src="verify.jpg" alt="Verify Zakat" />
-        <p>Already submitted a Zakat request? Track your application status and updates here.</p>
-        <button>VERIFY</button>
-      </div>
+    <script>
+      function toggleMenu() {
+        const navbar = document.getElementById("navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const payButton = document.querySelectorAll(".zakat-card button")[1]; // PAY button
 
-    </div>
-  </section>
+        payButton.addEventListener("click", async () => {
+          if (typeof window.ethereum === "undefined") {
+            alert("MetaMask is not installed!");
+            return;
+          }
 
-  <script>
-    function toggleMenu() {
-      const navbar = document.getElementById('navbar');
-      navbar.classList.toggle('active');
-    }
-  </script>
-</body>
+          // Prompt user for RM amount
+          const rmInput = prompt("Enter the amount you wish to pay (in RM):");
+          const rmAmount = parseFloat(rmInput);
 
+          if (isNaN(rmAmount) || rmAmount <= 0) {
+            alert("Invalid amount entered.");
+            return;
+          }
+
+          try {
+            // 🔄 Fetch real-time ETH price in MYR from CoinGecko
+            const response = await fetch(
+              "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=myr"
+            );
+            const data = await response.json();
+            const ethPriceInRM = data.ethereum.myr;
+
+            if (!ethPriceInRM) {
+              alert("Failed to get ETH price. Try again later.");
+              return;
+            }
+
+            const ethAmount = rmAmount / ethPriceInRM;
+
+            const provider = new ethers.providers.Web3Provider(window.ethereum);
+            const signer = provider.getSigner();
+
+            await provider.send("eth_requestAccounts", []);
+
+            const tx = await signer.sendTransaction({
+              to: "0x773B4B335A1d5498d3704Ee7F7cca25D2136B2D8", // Replace with your address
+              value: ethers.utils.parseEther(ethAmount.toFixed(6)),
+            });
+
+            alert(`Transaction sent!\nTx Hash: ${tx.hash}`);
+            console.log("Transaction:", tx);
+          } catch (err) {
+            console.error(err);
+            alert("Transaction failed: " + err.message);
+          }
+        });
+      });
+    </script>
+  </body>
 </html>

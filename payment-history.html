@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BarakahFund - Payment History</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="payment-history.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="assets/barakah_fund_logo.png" alt="BarakahFund Logo" class="logo-img" />
+        <span>BarakahFund</span>
+      </a>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="header-right">
+        <nav class="navbar" id="navbar">
+          <a href="Homepage2.html" class="active">Home</a>
+          <a href="zakat.html">Zakat</a>
+          <a href="waqf.html">Waqf</a>
+          <a href="sadaqah.html">Sadaqah</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="user-icon">
+          <i class="fas fa-user"></i>
+          <div class="dropdown">
+            <a href="profile.html">Profile</a>
+            <a href="Homepage.html">Log Out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <!-- ========== PROFILE WRAPPER ========== -->
+  <div class="profile-wrapper">
+    <!-- ======= SIDEBAR ======= -->
+    <aside class="sidebar">
+      <div class="profile-pic">
+        <img src="assets/Hazami.png" alt="Profile Photo" />
+        <div class="edit-icon">
+          <i class="fas fa-pen"></i>
+        </div>
+      </div>
+      <h2>Hazami</h2>
+      <p><i class="fas fa-map-marker-alt"></i> Johor</p>
+      <p><i class="fas fa-calendar-alt"></i> 19th May</p>
+      <nav>
+        <a href="profile.html">Profile Information</a>
+        <a href="#" class="active">Payment History</a>
+      </nav>
+    </aside>
+
+    <!-- ======= PAYMENT HISTORY CONTENT ======= -->
+    <main class="profile-content">
+      <section class="donation-history">
+        <div class="donation-container">
+          <h2 class="donation-title">Payment History</h2>
+          <div id="donation-total" class="donation-total">Loading...</div>
+          <div id="latest-transactions" class="transaction-list">Fetching transactions...</div>
+          
+          <a href="https://sepolia.etherscan.io/address/0x0b143f9014112A8f277CD977252a097bD1456b9A" 
+            target="_blank" 
+            class="view-all-btn">
+            View All Transactions
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    // Toggles navbar for mobile
+    function toggleMenu() {
+      document.getElementById('navbar').classList.toggle('active');
+    }
+
+    // Fetch Ethereum donations from Etherscan
+    async function fetchDonationsFromEtherscan() {
+      const walletAddress = "0x0b143f9014112A8f277CD977252a097bD1456b9A";
+      const apiKey = "YA67QRYTMZBQA97EEU5T39R497Q6IGD577";
+      const apiUrl = `https://api-sepolia.etherscan.io/api?module=account&action=txlist&address=${walletAddress}&startblock=0&endblock=99999999&sort=desc&apikey=${apiKey}`;
+
+      try {
+        const res = await fetch(apiUrl);
+        const data = await res.json();
+
+        if (data.status !== "1" || !data.result) throw new Error("Failed to fetch transaction history.");
+
+        const transactions = data.result.filter(tx => tx.to?.toLowerCase() === walletAddress.toLowerCase());
+
+        const totalEth = transactions.reduce((sum, tx) => sum + parseFloat(tx.value) / 1e18, 0);
+
+        // Get ETH to MYR exchange rate
+        const ethRateRes = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=myr");
+        const rateData = await ethRateRes.json();
+        const ethToMYR = rateData.ethereum.myr;
+        const totalMYR = (totalEth * ethToMYR).toFixed(2);
+
+        // Show total donation amount
+        document.getElementById("donation-total").textContent = 
+          `Total Donations: ${totalEth.toFixed(4)} ETH (≈ RM ${totalMYR})`;
+
+        // Generate HTML for latest 5 transactions
+        const txHtml = transactions.slice(0, 5).map(tx => {
+          const valueEth = parseFloat(tx.value) / 1e18;
+          const valueMYR = (valueEth * ethToMYR).toFixed(2);
+          const txDate = new Date(tx.timeStamp * 1000).toLocaleDateString();
+          const txHashShort = tx.hash.slice(0, 10) + "...";
+          const etherscanLink = `https://sepolia.etherscan.io/tx/${tx.hash}`;
+
+          return `
+            <div class="transaction-card">
+              <div class="tx-info">
+                <p><strong>Date:</strong> ${txDate}</p>
+                <p><strong>Hash:</strong> ${txHashShort}</p>
+                <p><strong>Amount:</strong> ${valueEth.toFixed(4)} ETH (RM ${valueMYR})</p>
+              </div>
+              <a href="${etherscanLink}" target="_blank" class="details-btn">Details</a>
+            </div>
+          `;
+        }).join("");
+
+        document.getElementById("latest-transactions").innerHTML = txHtml;
+
+      } catch (error) {
+        console.error(error);
+        document.getElementById("donation-total").textContent = "Failed to load donation total.";
+        document.getElementById("latest-transactions").textContent = "No transaction data available.";
+      }
+    }
+
+    // Call on page load
+    fetchDonationsFromEtherscan();
+  </script>
+</body>
+</html>

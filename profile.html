@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BarakahFund - User Profile</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="profile.css" />
 </head>
-
 <body>
-    <header class="header">
+  <!-- ========== HEADER ========== -->
+  <!-- Header -->
+  <header class="header">
     <a href="#" class="logo">
-      <img src="assets/03ef7d53c58222b098e8eadd4c50ba29.png" alt="BarakahFund Logo" class="logo-img" />
+      <img src="assets/barakah_fund_logo.png" alt="BarakahFund Logo" class="logo-img" />
       <span>BarakahFund</span>
     </a>
 
@@ -24,7 +28,7 @@
 
     <div class="header-right">
       <nav class="navbar" id="navbar">
-        <a href="Homepage2.html">Home</a>
+        <a href="Homepage2.html" class="active">Home</a>
         <a href="zakat.html">Zakat</a>
         <a href="waqf.html">Waqf</a>
         <a href="sadaqah.html">Sadaqah</a>
@@ -42,24 +46,27 @@
     </div>
   </header>
 
+  <!-- ========== PROFILE WRAPPER ========== -->
   <div class="profile-wrapper">
-    <!-- Sidebar -->
-    <div class="sidebar">
+    <!-- ======= SIDEBAR ======= -->
+    <aside class="sidebar">
       <div class="profile-pic">
-        <img src="assets/profile.jpg" alt="Profile Photo" />
-        <div class="edit-icon"><i class="fas fa-pen"></i></div>
+        <img src="assets/Hazami.png" alt="Profile Photo" />
+        <div class="edit-icon">
+          <i class="fas fa-pen"></i>
+        </div>
       </div>
-      <h2>Hazami <span class="verified"><i class="fas fa-check-circle"></i></span></h2>
+      <h2>Hazami</h2>
       <p><i class="fas fa-map-marker-alt"></i> Johor</p>
       <p><i class="fas fa-calendar-alt"></i> 19th May</p>
       <nav>
         <a href="#" class="active">Profile Information</a>
-        <a href="#">Account</a>
+        <a href="payment-history.html">Payment History</a>
       </nav>
-    </div>
+    </aside>
 
-    <!-- Profile Form -->
-    <div class="profile-content">
+    <!-- ======= PROFILE CONTENT ======= -->
+    <main class="profile-content">
       <h2>Personal Information</h2>
       <form>
         <label for="name">Name:</label>
@@ -84,8 +91,14 @@
 
         <button type="submit" class="save-btn">Save</button>
       </form>
-    </div>
+    </main>
   </div>
-</body>
 
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('navbar').classList.toggle('active');
+    }
+  </script>
+</body>
 </html>

@@ -1,5 +1,11 @@
+/* ===============================
+   IMPORT FONT
+=============================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* ===============================
+   GLOBAL RESET & BASE STYLES
+=============================== */
 * {
   margin: 0;
   padding: 0;
@@ -9,17 +15,17 @@
 
 body {
   background: white;
-  color: black;
+  color: #222;
 }
 
-/* HEADER */
+/* ========== HEADER ========== */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 15px 10%;
-  background: black;
+  background: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +36,7 @@ body {
 .logo {
   font-size: 24px;
   font-weight: 600;
-  color: white;
+  color: #fff;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -52,7 +58,7 @@ body {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: white;
+  background: #fff;
   border-radius: 2px;
 }
 
@@ -66,11 +72,9 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
-  transition: transform 0.2s ease, font-size 0.2s ease;
+  color: #fff;
   padding: 10px 16px;
-  color: white;
-  border: none;
-  border-radius: 0;
+  transition: transform 0.2s, font-size 0.2s;
 }
 
 .navbar a:hover {
@@ -87,12 +91,8 @@ body {
   position: relative;
   cursor: pointer;
   padding: 10px;
-  color: white;
   font-size: 20px;
-}
-
-.user-icon i {
-  color: white;
+  color: #fff;
 }
 
 .user-icon .dropdown {
@@ -100,12 +100,12 @@ body {
   position: absolute;
   top: 40px;
   right: 0;
-  background: white;
+  background: #fff;
   min-width: 140px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
-  overflow: hidden;
   z-index: 999;
+  overflow: hidden;
 }
 
 .user-icon:hover .dropdown {
@@ -115,11 +115,11 @@ body {
 .user-icon .dropdown a {
   display: block;
   padding: 12px 16px;
-  color: black;
+  color: #000;
   text-decoration: none;
   font-size: 14px;
   border-bottom: 1px solid #eee;
-  transition: background 0.2s ease;
+  transition: background 0.2s;
 }
 
 .user-icon .dropdown a:last-child {
@@ -130,65 +130,107 @@ body {
   background-color: #f7f7f7;
 }
 
-/* PROFILE SECTION */
+
+/* ===============================
+   USER ICON DROPDOWN
+=============================== */
+.user-icon {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.user-icon .dropdown {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.user-icon:hover .dropdown {
+  display: block;
+}
+
+.user-icon .dropdown a {
+  display: block;
+  padding: 12px 16px;
+  color: #222;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.user-icon .dropdown a:hover {
+  background: #f0f0f0;
+}
+
+/* ===============================
+   PROFILE PAGE LAYOUT
+=============================== */
 .profile-wrapper {
   display: flex;
   max-width: 1100px;
-  margin: 120px auto;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin: 120px auto 40px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
   overflow: hidden;
+  animation: fadeSlide 0.6s ease-in-out;
 }
 
+/* ===============================
+   SIDEBAR STYLES
+=============================== */
 .sidebar {
-  width: 280px;
-  background-color: #f8fdf8;
-  border-right: 1px solid #ddd;
+  background: #e8f5e9;
   padding: 40px 20px;
   text-align: center;
+  width: 280px;
+  border-right: 1px solid #ddd;
 }
 
 .profile-pic {
   position: relative;
   width: 120px;
   height: 120px;
-  margin: 0 auto 10px;
+  margin: 0 auto 15px;
+  animation: floatPic 5s ease-in-out infinite;
 }
 
 .profile-pic img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  border: 3px solid #ccc;
   object-fit: cover;
-  border: 3px solid #ddd;
 }
 
 .edit-icon {
   position: absolute;
-  bottom: 0;
   right: 0;
-  background-color: #4CAF50;
-  color: #fff;
+  bottom: 0;
+  background: #28a745;
+  color: white;
   border-radius: 50%;
-  padding: 6px;
+  padding: 5px;
   font-size: 12px;
   cursor: pointer;
 }
 
 .sidebar h2 {
   margin: 10px 0 5px;
+  font-size: 20px;
 }
 
 .verified {
-  color: #4CAF50;
-  margin-left: 4px;
+  color: #28a745;
 }
 
 .sidebar p {
   font-size: 14px;
   color: #555;
-  margin: 4px 0;
 }
 
 .sidebar nav {
@@ -199,20 +241,23 @@ body {
 }
 
 .sidebar nav a {
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
-  color: #333;
   text-align: left;
-  padding-left: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
 .sidebar nav a.active,
 .sidebar nav a:hover {
-  background-color: #4CAF50;
-  color: #fff;
+  background: #28a745;
+  color: white;
 }
 
+/* ===============================
+   PROFILE CONTENT
+=============================== */
 .profile-content {
   flex: 1;
   padding: 40px;
@@ -220,11 +265,12 @@ body {
 
 .profile-content h2 {
   margin-bottom: 20px;
-  color: #222;
+  font-size: 24px;
 }
 
 .profile-content h3 {
   margin-top: 40px;
+  font-size: 18px;
   color: #444;
 }
 
@@ -234,68 +280,78 @@ form {
 }
 
 label {
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-top: 20px;
   font-weight: 500;
 }
 
 input {
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 12px;
   border-radius: 6px;
-  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #28a745;
+  outline: none;
 }
 
 .save-btn {
   margin-top: 30px;
   padding: 12px;
-  background-color: #4CAF50;
+  background: #28a745;
   color: white;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
   font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .save-btn:hover {
-  background-color: #45a049;
+  background: #218838;
 }
 
+/* ===============================
+   ANIMATIONS
+=============================== */
+@keyframes fadeSlide {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatPic {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* ===============================
+   RESPONSIVE STYLES
+=============================== */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
 
   .navbar {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: black;
-    flex-direction: column;
-    width: 100%;
     display: none;
-    padding: 20px 0;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 65px;
+    right: 10%;
+    width: 200px;
+    border-radius: 8px;
   }
 
   .navbar.active {
     display: flex;
   }
 
-  .navbar a {
-    padding: 12px 0;
-    text-align: center;
-    width: 100%;
-    border: none;
-  }
-
-  .header-right {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
   .profile-wrapper {
     flex-direction: column;
-    margin: 100px 20px;
+    margin: 100px 20px 40px;
   }
 
   .sidebar {

@@ -1,3 +1,6 @@
+/* ===================================================
+   GLOBAL STYLES
+=================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -12,7 +15,9 @@ body {
   color: black;
 }
 
-/* HEADER */
+/* ===================================================
+   HEADER
+=================================================== */
 .header {
   position: fixed;
   top: 0;
@@ -28,13 +33,27 @@ body {
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: 600;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
   color: white;
   text-decoration: none;
+  font-weight: 600;
+  gap: 10px;
 }
 
-/* Navbar Buttons */
+.logo-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ===================================================
+   NAVBAR
+=================================================== */
 .navbar {
   display: flex;
   align-items: center;
@@ -51,7 +70,7 @@ body {
   border: 2px solid white;
 }
 
-/* Login - White circle */
+/* Login Button */
 .navbar .login-btn {
   background: white;
   color: black;
@@ -61,7 +80,7 @@ body {
   background: #f1f1f1;
 }
 
-/* Register - Black circle */
+/* Register Button */
 .navbar .register-btn {
   background: black;
   color: white;
@@ -73,16 +92,21 @@ body {
   color: black;
 }
 
-/* HOME SECTION */
+/* ===================================================
+   HOME SECTION
+=================================================== */
 .home {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 100px 10% 40px;
+  flex-wrap: wrap;
 }
 
 .home-content {
   max-width: 650px;
+  flex: 1;
 }
 
 .home-content h1 {
@@ -99,6 +123,7 @@ body {
   margin-bottom: 30px;
 }
 
+/* Home Buttons */
 .btn-box {
   display: flex;
   gap: 20px;
@@ -113,7 +138,7 @@ body {
   transition: 0.3s;
 }
 
-/* Open Account - black button */
+/* Open Account Button */
 .btn-box a:first-child {
   background: black;
   color: white;
@@ -125,7 +150,7 @@ body {
   color: black;
 }
 
-/* Give Now - white button */
+/* Give Now Button */
 .btn-box a:last-child {
   background: white;
   color: black;
@@ -137,49 +162,92 @@ body {
   color: white;
 }
 
-/* Testimonial Section */
-.testimonial {
-  padding: 80px 10%;
+.hero-image {
+  flex: 1;
   display: flex;
   justify-content: center;
-  background: #fff;
+  align-items: center;
+  padding: 20px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.hero-image img {
+  width: 400px;
+  max-width: 100%;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05) rotate(2deg);
+  opacity: 0.9;
+}
+
+/* Smooth floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translateY(-15px) rotate(1deg) scale(1.02);
+  }
+  50% {
+    transform: translateY(0px) rotate(-1deg) scale(1);
+  }
+  75% {
+    transform: translateY(15px) rotate(1deg) scale(0.98);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+}
+
+/* ===================================================
+   TESTIMONIAL SECTION
+=================================================== */
+.testimonial-section {
+  padding: 60px 10%;
+  background-color: #fff;
+  color: #333;
 }
 
 .testimonial-container {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 40px;
-  max-width: 1200px;
-  width: 100%;
+  flex-wrap: wrap;
 }
 
-.testimonial-image img {
-  width: 100%;
-  max-width: 400px;
+.testimonial-img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .testimonial-text {
+  flex: 1;
+  min-width: 280px;
   max-width: 600px;
 }
 
 .testimonial-text h2 {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
   color: #333;
-  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .testimonial-text p {
   font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
   line-height: 1.6;
+  margin-bottom: 20px;
 }
 
+/* Learn More Button */
 .learn-more-btn {
   display: inline-block;
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   color: white;
   padding: 12px 24px;
   text-decoration: none;
@@ -189,13 +257,14 @@ body {
 }
 
 .learn-more-btn:hover {
-  background-color: #45a049; /* Darker green on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #45a049;
+  transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Impact Section */
+/* ===================================================
+   IMPACT SECTION
+=================================================== */
 .impact {
   padding: 60px 10%;
   background-color: #f0fff5;
@@ -222,6 +291,7 @@ body {
   color: #444;
 }
 
+/* Impact Stats */
 .impact-stats {
   display: flex;
   flex-wrap: wrap;
@@ -259,8 +329,9 @@ body {
   color: #333;
 }
 
-
-/* Info Cards Section */
+/* ===================================================
+   INFO CARDS SECTION
+=================================================== */
 .info-cards {
   padding: 80px 10%;
   background: #fff;
@@ -298,7 +369,7 @@ body {
   border-radius: 12px;
   overflow: hidden;
   max-width: 300px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -324,17 +395,24 @@ body {
 
 .readmore {
   display: inline-block;
-  color: #34a853;
+  margin-top: 10px;
+  color: #00ab50;
   font-weight: 600;
   text-decoration: none;
-  font-size: 14px;
+  border: 2px solid #00ab50;
+  padding: 8px 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .readmore:hover {
-  text-decoration: underline;
+  background-color: #00ab50;
+  color: #fff;
 }
 
-
+/* ===================================================
+   FOOTER
+=================================================== */
 .footer {
   background-color: #000;
   padding: 20px 10%;
@@ -354,96 +432,3 @@ body {
   text-align: center;
   font-size: 14px;
 }
-
-.social-icons {
-  display: flex;
-  gap: 6px;
-}
-
-.social-icons a {
-  color: white;
-  font-size: 20px;
-  margin-right: 11px;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #34a853; /* Optional: hover effect */
-}
-
-.logo {
-  display: flex;
-  align-items: center;     /* Vertically center items */
-  font-size: 25px;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  gap: 10px;
-}
-
-.logo-img {
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
-  object-fit: cover;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.testimonial-section {
-  padding: 60px 10%;
-  background-color: #f9f9f9; /* light background */
-  color: #333;
-}
-
-.testimonial-container {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap; /* responsive */
-}
-
-.testimonial-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%; /* make it a circle */
-  object-fit: cover;
-}
-
-.testimonial-text {
-  flex: 1;
-  min-width: 250px;
-}
-
-.testimonial-text h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #081b29;
-}
-
-.testimonial-text p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.info-cards .readmore {
-  display: inline-block;
-  margin-top: 10px;
-  color: #00ab50;
-  text-decoration: none;
-  font-weight: 600;
-  border: 2px solid #00ab50;
-  padding: 8px 16px;
-  border-radius: 30px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.info-cards .readmore:hover {
-  background-color: #00ab50;
-  color: #fff;
-}
-
-
-
-
-

@@ -9,6 +9,7 @@
 
   <!-- Link to external CSS -->
   <link rel="stylesheet" href="waqf.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Font Awesome for user icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -17,7 +18,7 @@
 <body>
   <header class="header">
     <a href="#" class="logo">
-      <img src="assets/03ef7d53c58222b098e8eadd4c50ba29.png" alt="BarakahFund Logo" class="logo-img" />
+      <img src="assets/barakah_fund_logo.png" alt="BarakahFund Logo" class="logo-img" />
       <span>BarakahFund</span>
     </a>
 
@@ -47,45 +48,111 @@
     </div>
   </header>
 
-  <section class="waqf-section">
-    <h1>Support & Build the Future with Waqf</h1>
-    <div class="projects">
+  <section class="waqf-first-section">
+    <div class="waqf-content">
+      <h1>
+        Support a <span class="highlight-green">legacy.</span><br>
+        Build the future with <span class="highlight-green">waqf.</span>
+      </h1>
+      <p>
+        Waqf empowers lasting impact — from online transfers to essential goods.
+        Whether you’re giving to build a better future or preserve community
+        well-being, every contribution helps sustain goodness for generations.
+      </p>
+    </div>
+    <div class="waqf-image">
+      <img src="assets/coin.jpg" alt="Falling coins">
+    </div>
+  </section>
 
-      <div class="project-card">
-        <h2>Mosque Speaker</h2>
-        <p><strong>Bank:</strong> Bank Islam Malaysia</p>
-        <p><strong>Location:</strong> Putrajaya, Malaysia</p>
-        <p><strong>Goal:</strong> RM10,500.00</p>
-        <p><strong>Raised:</strong> RM4,020.00 (38%)</p>
+<section class="latest-waqf-section">
+  <div class="waqf-header">
+    <h2>Latest Waqf</h2>
+    <button class="more-btn">MORE</button>
+  </div>
+
+  <div class="waqf-cards">
+    <!-- Card 1 -->
+    <div class="waqf-card">
+      <img src="assets/mosque_speaker.jpg" alt="Mosque Speaker">
+      <div class="waqf-content">
+        <h3>Mosque Speaker</h3>
+        <p class="bank"><i class="icon-bank"></i> Bank Islam Malaysia</p>
+        <p class="location"><i class="icon-location"></i> Putrajaya, Malaysia</p>
+        <div class="goal-info">
+          <strong>Goal</strong> <span>RM10,500.00</span><br>
+          <strong>Raised</strong> <span>RM4,020.00</span>
+        </div>
         <div class="progress-bar">
           <div class="progress" style="width: 38%;"></div>
         </div>
+        <p class="raised-percent">Raised: 38%</p>
+        <button class="details-btn">VIEW DETAILS</button>
       </div>
+    </div>
 
-      <div class="project-card">
-        <h2>Bukit Lanjan</h2>
-        <p><strong>Bank:</strong> Bank Muamalat Malaysia</p>
-        <p><strong>Location:</strong> Selangor, Malaysia</p>
-        <p><strong>Goal:</strong> RM7,000.00</p>
-        <p><strong>Raised:</strong> RM2,100.00 (30%)</p>
+    <!-- Card 2 -->
+    <div class="waqf-card">
+      <img src="assets/sk_bukit.jpg" alt="School Chairs">
+      <div class="waqf-content">
+        <h3>New chairs for SK Bukit Lanjan</h3>
+        <p class="bank"><i class="icon-bank"></i> Bank Muamalat Malaysia</p>
+        <p class="location"><i class="icon-location"></i> Selangor, Malaysia</p>
+        <div class="goal-info">
+          <strong>Goal</strong> <span>RM7000.00</span><br>
+          <strong>Raised</strong> <span>RM2,100.00</span>
+        </div>
         <div class="progress-bar">
           <div class="progress" style="width: 30%;"></div>
         </div>
+        <p class="raised-percent">Raised: 30%</p>
+        <button class="details-btn">VIEW DETAILS</button>
       </div>
-
-      <div class="project-card">
-        <h2>Dialysis for Hospital Serdang</h2>
-        <p><strong>Bank:</strong> Bank Islam Malaysia</p>
-        <p><strong>Location:</strong> Kuala Lumpur, Malaysia</p>
-        <p><strong>Goal:</strong> RM80,000.00</p>
-        <p><strong>Raised:</strong> RM3,820.00 (5%)</p>
-        <div class="progress-bar">
-          <div class="progress" style="width: 5%;"></div>
-        </div>
-      </div>
-
     </div>
-  </section>
+
+    <!-- Card 3 -->
+    <div class="waqf-card">
+      <img src="assets/hospital.jpg" alt="Dialysis Center">
+      <div class="waqf-content">
+        <h3>Dialysis for Hospital Serdang</h3>
+        <p class="bank"><i class="icon-bank"></i> Bank Islam Malaysia</p>
+        <p class="location"><i class="icon-location"></i> Kuala Lumpur, Malaysia</p>
+        <div class="goal-info">
+          <strong>Goal</strong> <span>RM80,000.00</span><br>
+          <strong>Raised</strong> <span>RM3,820.00</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress" style="width: 3%;"></div>
+        </div>
+        <p class="raised-percent">Raised: 3%</p>
+        <button class="details-btn">VIEW DETAILS</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-top">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-nav">
+        <a href="Homepage2.html">Home</a>
+        <a href="zakat.html">Zakat</a>
+        <a href="waqf.html">Waqf</a>
+        <a href="sadaqah.html">Sadaqah</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-text">© 2025 Barakah Services. All rights reserved.</div>
+</footer>
+
 
   <script>
     function toggleMenu() {

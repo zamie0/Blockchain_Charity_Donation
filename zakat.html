@@ -1,87 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarakahFund - Charity Platform</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BarakahFund - Charity Platform</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="zakat.css" />
 
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="zakat.css" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-  <!-- Font Awesome for user icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
+    <!-- Ethers.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  </head>
 
-<body>
-  <header class="header">
-    <a href="#" class="logo">
-      <img src="assets/03ef7d53c58222b098e8eadd4c50ba29.png" alt="BarakahFund Logo" class="logo-img" />
-      <span>BarakahFund</span>
-    </a>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="assets/barakah_fund_logo.png" alt="BarakahFund Logo" class="logo-img" />
+        <span>BarakahFund</span>
+      </a>
 
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-    <div class="header-right">
-      <nav class="navbar" id="navbar">
-        <a href="Homepage2.html" class="active">Home</a>
-        <a href="zakat.html">Zakat</a>
-        <a href="waqf.html">Waqf</a>
-        <a href="sadaqah.html">Sadaqah</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact Us</a>
-      </nav>
+      <div class="header-right">
+        <nav class="navbar" id="navbar">
+          <a href="Homepage2.html" class="active">Home</a>
+          <a href="zakat.html">Zakat</a>
+          <a href="waqf.html">Waqf</a>
+          <a href="sadaqah.html">Sadaqah</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
 
-      <div class="user-icon">
-        <i class="fas fa-user"></i>
-        <div class="dropdown">
-          <a href="profile.html">Profile</a>
-          <a href="Homepage.html">Log Out</a>
+        <div class="user-icon">
+          <i class="fas fa-user"></i>
+          <div class="dropdown">
+            <a href="profile.html">Profile</a>
+            <a href="Homepage.html">Log Out</a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section class="zakat-section">
-    <div class="zakat-header">
-      <h1>ZAKAT</h1>
-      <button class="more-btn">MORE</button>
-    </div>
+    <!-- Hero Section -->
+    <section class="zakat-section">
+      <div class="zakat-content">
+        <h1 class="zakat-title">
+          Meet your <span class="highlight-green">giving</span><br />
+          meaningful<br />
+          and seamless
+        </h1>
+        <p class="zakat-subtext">
+          Empowering you to fulfill your Zakat with ease,<br />
+          confidence, and transparency
+        </p>
+      </div>
+      <div class="zakat-image">
+        <img src="assets/gold.jpg" alt="Gold Bars" />
+      </div>
+    </section>
 
-    <div class="zakat-cards">
-
-      <div class="zakat-card">
-        <img src="calculate.jpg" alt="Zakat Calculation" />
-        <p>Easily calculate your annual Zakat on income, savings, gold, and more. 100% Shariah-compliant.</p>
-        <button>CALCULATE</button>
+    <!-- Zakat Cards Section -->
+    <section class="zakat-cards-section">
+      <div class="zakat-header">
+        <h2>ZAKAT</h2>
+        <button class="zakat-more-btn">MORE</button>
       </div>
 
-      <div class="zakat-card">
-        <img src="pay.jpg" alt="Pay Zakat" />
-        <p>Pay your Zakat directly to trusted channels online. Fast, secure, and accountable.</p>
-        <button>PAY</button>
+      <div class="zakat-cards">
+        <div class="zakat-card">
+          <img src="assets/calculate.jpg" alt="Calculator" />
+          <p>
+            Easily calculate your annual Zakat on income, savings, gold, and more —
+            100% Shariah-compliant
+          </p>
+          <button class="zakat-btn green">CALCULATE</button>
+        </div>
+
+        <div class="zakat-card">
+          <img src="assets/money.jpg" alt="Pay Zakat" />
+          <p>
+            Pay your Zakat directly to trusted channels online. Fast, secure, and accountable
+          </p>
+          <button class="zakat-btn green">PAY</button>
+        </div>
+
+        <div class="zakat-card">
+          <img src="assets/seed.jpg" alt="Verify Zakat" />
+          <p>
+            Already submitted a Zakat request? Track your application status and updates here
+          </p>
+          <button class="zakat-btn green">VERIFY</button>
+        </div>
       </div>
+    </section>
 
-      <div class="zakat-card">
-        <img src="verify.jpg" alt="Verify Zakat" />
-        <p>Already submitted a Zakat request? Track your application status and updates here.</p>
-        <button>VERIFY</button>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-top">
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="footer-nav">
+            <a href="Homepage2.html">Home</a>
+            <a href="zakat.html">Zakat</a>
+            <a href="waqf.html">Waqf</a>
+            <a href="sadaqah.html">Sadaqah</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
       </div>
+      <div class="footer-text">© 2025 Barakah Services. All rights reserved.</div>
+    </footer>
 
-    </div>
-  </section>
-
-  <script>
-    function toggleMenu() {
-      const navbar = document.getElementById('navbar');
-      navbar.classList.toggle('active');
-    }
-  </script>
-</body>
-
+    <!-- Toggle Menu Script -->
+    <script>
+      function toggleMenu() {
+        const navbar = document.getElementById("navbar");
+        navbar.classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -27,7 +28,6 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* LOGO */
 .logo {
   font-size: 24px;
   font-weight: 600;
@@ -43,7 +43,6 @@ body {
   margin-right: 8px;
 }
 
-/* HAMBURGER MENU */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -58,7 +57,6 @@ body {
   border-radius: 2px;
 }
 
-/* NAVBAR */
 .navbar {
   display: flex;
   align-items: center;
@@ -69,38 +67,29 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
-  transition: transform 0.2s ease, font-size 0.2s ease;
   padding: 10px 16px;
   color: white;
-  border: none;
-  border-radius: 0;
+  transition: transform 0.2s ease;
 }
 
 .navbar a:hover {
   transform: scale(1.1);
 }
 
-/* HEADER RIGHT (Navbar + User Icon) */
 .header-right {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-/* USER ICON DROPDOWN */
 .user-icon {
   position: relative;
   cursor: pointer;
   padding: 10px;
-  color: white;
   font-size: 20px;
-}
-
-.user-icon i {
   color: white;
 }
 
-/* Dropdown menu hidden by default */
 .user-icon .dropdown {
   display: none;
   position: absolute;
@@ -110,16 +99,14 @@ body {
   min-width: 140px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
-  overflow: hidden;
   z-index: 999;
+  overflow: hidden;
 }
 
-/* Show dropdown on hover */
 .user-icon:hover .dropdown {
   display: block;
 }
 
-/* Dropdown links */
 .user-icon .dropdown a {
   display: block;
   padding: 12px 16px;
@@ -138,109 +125,248 @@ body {
   background-color: #f7f7f7;
 }
 
-/* HOME SECTION */
-.home {
-  min-height: 100vh;
+/* MAIN SECTION */
+.zakat-section {
   display: flex;
   align-items: center;
-  padding: 100px 10% 40px;
+  justify-content: space-between;
+  padding: 300px 10%;
+  background-color: white;
+  height: 500px; /* You can adjust this height */
+  gap: 40px;
 }
 
-.home-content {
-  max-width: 650px;
+.zakat-content {
+  flex: 1;
 }
 
-.home-content h1 {
-  font-size: 40px;
+.zakat-title {
+  font-size: 50px;
   font-weight: 700;
   color: #222;
-  margin-bottom: 20px;
+  line-height: 1.3;
 }
 
-.home-content p {
-  font-size: 16px;
-  color: #444;
+.highlight-green {
+  color: #28a745; /* Green accent */
+}
+
+.zakat-subtext {
+  font-size: 20px;
+  color: #555;
+  margin-top: 20px;
   line-height: 1.6;
+}
+
+.zakat-image {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.zakat-image img {
+  display: block;
+  max-height: 500px;
+  height: auto;
+}
+
+/* ZAKAT CARDS */
+.zakat-cards-section {
+  padding: 100px 5%;
+  background: #fff;
+}
+
+.zakat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-bottom: 30px;
 }
 
-/* BUTTONS */
-.btn-box {
-  display: flex;
-  gap: 20px;
+.zakat-header h2 {
+  font-size: 28px;
+  font-weight: 700;
 }
 
-.btn-box a {
-  padding: 12px 24px;
-  border-radius: 50px;
-  text-decoration: none;
+.zakat-more-btn {
+  padding: 8px 16px;
+  border: 2px solid #4CAF50;
+  background: #fff;
+  color: #4CAF50;
   font-weight: 600;
-  font-size: 15px;
-  transition: 0.3s;
-  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* Black button */
-.btn-box a:first-child {
-  background: black;
+.zakat-more-btn:hover {
+  background: #4CAF50;
+  color: #fff;
+}
+
+.zakat-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.zakat-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 30%;
+  max-width: 30%;
+  text-align: center;
+}
+
+.zakat-card img {
+  width: 100%;
+  height: 180px; /* Made image taller */
+  object-fit: cover;
+}
+
+.zakat-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.zakat-btn.green {
+  background-color: #4CAF50;
   color: white;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.btn-box a:first-child:hover {
-  background: white;
-  color: black;
-}
-
-/* White button */
-.btn-box a:last-child {
-  background: white;
-  color: black;
-}
-
-.btn-box a:last-child:hover {
-  background: black;
-  color: white;
+.zakat-btn.green:hover {
+  background-color: #43a047;
 }
 
 /* FOOTER */
 .footer {
   background-color: #000;
-  padding: 20px 10%;
   color: #fff;
+  padding: 20px 10%;
+  text-align: center;
   position: relative;
 }
 
 .footer-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.footer-text {
-  flex: 1;
-  text-align: center;
+.footer-top {
+  width: 100%;
+  position: relative;
+  min-height: 50px;
+}
+
+.footer-nav {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
   font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #34a853;
 }
 
 .social-icons {
   display: flex;
-  gap: 6px;
+  gap: 10px;
+  position: absolute;
+  left: 1px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .social-icons a {
-  color: white;
-  font-size: 20px;
-  margin-right: 11px;
-  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #34a853;
+  background: #34a853;
+  color: #fff;
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
+.footer-text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .zakat-section {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 5%;
+  }
+
+  .zakat-content {
+    max-width: 100%;
+  }
+
+ .zakat-image {
+    position: relative; /* allows flexible positioning */
+    transform: none;
+    margin-top: 30px;
+    width: 100%;          /* takes full width of its container */
+    max-width: none;      /* removes limit */
+    height: auto;         /* adjusts height naturally */
+  }
+
+  .zakat-image img {
+    width: 100%;           /* fills the parent container */
+    height: auto;          /* keeps aspect ratio */
+    margin: 0 auto;
+    display: block;        /* centers the image horizontally */
+    object-fit: contain;   /* ensures full image is visible */
+  }
+
+  .zakat-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .zakat-card {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
   .hamburger {
     display: flex;
   }
@@ -264,7 +390,6 @@ body {
     padding: 12px 0;
     text-align: center;
     width: 100%;
-    border: none;
   }
 
   .header-right {
@@ -272,119 +397,18 @@ body {
     align-items: flex-end;
   }
 
-  .btn-box {
-    flex-direction: column;
-    align-items: flex-start;
+  .footer-nav {
+    position: static;
+    transform: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
   }
 
-  .home-content h1 {
-    font-size: 28px;
-  }
-
-  .home-content p {
-    font-size: 14px;
-  }
-}
-
-.zakat-section {
-  padding: 100px 10%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.zakat-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 30px;
-}
-
-.zakat-header h1 {
-  font-size: 2em;
-  color: #00796b;
-  margin: 0;
-}
-
-.more-btn {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.more-btn:hover {
-  background-color: #388e3c;
-}
-
-.zakat-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-
-.zakat-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  padding: 20px;
-  width: 300px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.zakat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-}
-
-.zakat-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  object-fit: cover;
-}
-
-.zakat-card p {
-  margin-bottom: 20px;
-  font-size: 0.95em;
-  line-height: 1.4;
-}
-
-.zakat-card button {
-  background-color: #00796b;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.zakat-card button:hover {
-  background-color: #004d40;
-}
-
-/* Responsive Fix for Small Screens */
-@media (max-width: 768px) {
-  .zakat-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .zakat-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .zakat-card {
-    width: 90%;
+  .social-icons {
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
   }
 }

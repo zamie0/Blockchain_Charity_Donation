@@ -7,17 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BarakahFund - Charity Platform</title>
 
-  <!-- Link to external CSS -->
+  <!-- External CSS -->
   <link rel="stylesheet" href="contact.css" />
-
-  <!-- Font Awesome for user icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
+  <!-- Header -->
   <header class="header">
     <a href="#" class="logo">
-      <img src="assets/03ef7d53c58222b098e8eadd4c50ba29.png" alt="BarakahFund Logo" class="logo-img" />
+      <img src="assets/barakah_fund_logo.png" alt="BarakahFund Logo" class="logo-img" />
       <span>BarakahFund</span>
     </a>
 
@@ -29,12 +28,12 @@
 
     <div class="header-right">
       <nav class="navbar" id="navbar">
-        <a href="Homepage2.html" class="active">Home</a>
+        <a href="Homepage2.html">Home</a>
         <a href="zakat.html">Zakat</a>
         <a href="waqf.html">Waqf</a>
         <a href="sadaqah.html">Sadaqah</a>
         <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" class="active">Contact Us</a>
       </nav>
 
       <div class="user-icon">
@@ -47,49 +46,108 @@
     </div>
   </header>
 
+  <!-- Contact Section -->
   <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Give with Intention, Share with Purpose</h3>
+        <p>Every ringgit of Zakat or Sadaqah makes a difference. Let's build a legacy of goodness through Waqf.</p>
+        <address>
+          Lot 29, Jalan Mawar 3,<br />
+          Taman Harmoni,<br />
+          50450 Kuala Lumpur,<br />
+          Malaysia
+        </address>
+        <p><i class="fas fa-phone"></i> +60 3-2772 5400</p>
+        <p><i class="fas fa-envelope"></i> barakahfund@gmail.com</p>
+        <p><i class="fas fa-clock"></i> Mon–Fri: 8:00am – 6:00pm</p>
+      </div>
 
-  <div class="contact-container">
-    <!-- Left Info Panel -->
-    <div class="contact-info">
-      <h3>Give with Intention, Share with Purpose.</h3>
-      <p>Every ringgit of Zakat or Sadaqah makes a difference. Let's build a legacy of goodness through Waqf.</p>
-      <address>
-        Lot 29, Jalan Mawar 3,<br />
-        Taman Harmoni,<br />
-        50450 Kuala Lumpur,<br />
-        Malaysia
-      </address>
-      <p><i class="fas fa-phone"></i> +60 3-2772 5400</p>
-      <p><i class="fas fa-envelope"></i> barakahfund@gmail.com</p>
-      <p><i class="fas fa-clock"></i> Mon–Fri: 8:00am – 6:00pm</p>
+      <div class="contact-form">
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" placeholder="First Name" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" placeholder="Last Name" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Email Address" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="Phone Number" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Subject" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Message" rows="5"></textarea>
+          </div>
+
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
     </div>
+  </section>
 
-    <!-- Right Contact Form -->
-    <div class="contact-form">
-      <form>
-        <div class="form-row">
-          <input type="text" placeholder="First Name" required />
-          <input type="text" placeholder="Last Name" required />
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Your message has been sent successfully!</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="form-row">
-          <input type="email" placeholder="Email Address" required />
-          <input type="tel" placeholder="Phone Number" />
+        <div class="footer-nav">
+          <a href="Homepage2.html">Home</a>
+          <a href="zakat.html">Zakat</a>
+          <a href="waqf.html">Waqf</a>
+          <a href="sadaqah.html">Sadaqah</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact Us</a>
         </div>
-        <input type="text" placeholder="Subject" />
-        <textarea placeholder="Message" rows="5"></textarea>
-        <button type="submit">SEND MESSAGE</button>
-      </form>
+      </div>
     </div>
-  </div>
-</section>
+    <div class="footer-text">© 2025 Barakah Services. All rights reserved.</div>
+  </footer>
 
-
+  <!-- JavaScript -->
   <script>
     function toggleMenu() {
       const navbar = document.getElementById('navbar');
       navbar.classList.toggle('active');
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.querySelector('.contact-form form');
+      const toast = document.getElementById('toast');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault(); // Stop form submission
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+        }, 3000); // Hide after 3 seconds
+        form.reset(); // Optional: Clear the form
+      });
+    });
   </script>
 </body>
 
